@@ -4,10 +4,6 @@
     {
       "src": "menu.html",
       "use": "@vercel/static"
-    },
-    {
-      "src": "menu.css",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -16,10 +12,8 @@
       "dest": "/menu.html"
     },
     {
-      "src": "/menu.css",
-      "dest": "/menu.css"
+      "src": "/(.*)",
+      "dest": "/menu.html"
     }
   ]
 }
-
-
