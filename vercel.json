@@ -1,6 +1,25 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "menu.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "menu.css",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/menu.html",
+      "dest": "/menu.html"
+    },
+    {
+      "src": "/menu.css",
+      "dest": "/menu.css"
+    }
   ]
 }
+
 
